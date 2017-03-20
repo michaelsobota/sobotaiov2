@@ -20,7 +20,8 @@
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -85,42 +86,72 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <p>My past six years of consulting for and working with product teams have taught me a lot. <i>Start with the end in mind</i>, <i>fail fast, fail safe</i>, <i>iterate</i>, <i>what problem are you solving?</i> <i>do you have product-market fit?</i> These are the things we often hear and take away when building a product.</p>
+                    <p>My past six years of consulting for and working with product teams have taught me a lot. <i>Start with the end in mind</i>,
+                        <i>fail fast, fail safe</i>, <i>iterate</i>, <i>what problem are you solving?</i> <i>do you have product-market fit?</i>                        These are the things we often hear and take away when building a product.</p> Despite all this great
+                    advice, I think Carl Sagan has put it best...
                     <p>
-                    <blockquote>If you wish to make an apple pie from scratch, you must first invent the universe.</blockquote>
-                    
-                    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/zSgiXGELjbc" frameborder="0" allowfullscreen></iframe></p>
+                        <blockquote>If you wish to make an apple pie from scratch, you must first invent the universe.</blockquote>
 
-                    <p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
+                        <p>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/zSgiXGELjbc" frameborder="0"
+                                allowfullscreen></iframe>
+                        </p>
 
-                    <p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
+                        <p>As technologists we often jump to the fun, exciting tools that everyone is chatting about.</p>
+                        <blockquote>Yeah, we've containerized our microservices, scheduling them with K8s and using Consul for discovery
+                            but now we're looking to go totally serverless with Lambda.</blockquote>
+                        <p>These are the whipped topping or ice cream that goes with your pie as you're eating it. But you will
+                            never get to
+                            <strike>enjoy your pie from scratch</strike> ship great software unless you first,
+                            <strike> build your universe</strike> understand and master your value stream.</p>
 
-                    <p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
+                        <p>The tendency to jump to the fun stuff is especially apparent at scale. Imagine a scenario where Product
+                            Owners, UI/UX Designers, Architects, Developers, Testers, SREs, Managers and Leads, all working
+                            across 2-15 different products that share the same priority (#1). Each individual group I just
+                            mentioned plays a critical role in shipping good software. But when there is too much work in
+                            process, each group will tend to self-optimize with the latest and greatest tools, expecting
+                            it to increase velocity and quality. It may be obvious when objectively reading this to say it
+                            comes as no surprise that this expectation falls flat. But time and time again when building
+                            products at scale the habits of optimizing individual silos prevails.</p>
 
-                    <h2 class="section-heading">The Final Frontier</h2>
+                        <p>The theory of constraints will tell you that optimizing anywhere in the system other than the constraint
+                            will <i>potentially</i> cause system wide degradation.</p> Logically, this makes perfect sense.
+                        If your product owner has the tools to fire off amazingly perfect user stories at an unbelievable
+                        rate, but your development team is blocked every other day by build issues, the stress applied from
+                        a growing product backlog will likely make them move even slower.</p>
 
-                    <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+                    <p>There are a set of questions you can ask yourself, or any member of the team, that will help identify
+                        the lack of understanding of your value stream.</p>
+                    <ul>
+                        <li>Do you understand all the steps involved to take an idea and ship it to the customer? Can you describe
+                            each step with some level of detail?</li>
+                        <li>Do you know the highest level initatives that your Product group has identified to support the overall
+                            vision? Do you know how many are being worked on currently and the progress on each?</li>
+                        <li>Are you made aware of, in a timely manner, of downstream teams being blocked by a need from your
+                            team? Are your needs from other teams readily known and addressed in a timely manner?</li>
+                    </ul>
+                    <p>If you can't begin to answer these questions, working on implementing the next hot tool is premature.
+                        Thinking about these types of questions help guide you on the way to understanding The Three Ways
+                        as described by Gene Kim in his novel, <a href="http://itrevolution.com/the-three-ways-principles-underpinning-devops/">The Phoenix Project</a>.</p>
+                    <p>Not being able to answer these questions means you fundamentally do not understand your value stream
+                        and your place in it or supporting it. Your team of teams is likely not communicating and providing
+                        the necessary feedback loops through the value stream.</p>
+                    <p>This leads to:</p>
+                    <blockquote>My development teams can't deliver fast enough. -Product Owner</blockquote>
+                    <blockquote>We don't have clear enough requirements and my ops team struggles to deploy my flawless code -Developer</blockquote>
+                    <blockquote>Oh yeah... that's expected behavior -Test Engineer</blockquote>
+                    <blockquote>This s*&t doesn't even build -Ops Engineer</blockquote>
+                    <blockquote>I am overloaded with customer tickets because we ship broken features -Support Engineer</blockquote>
 
-                    <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
-
-                    <blockquote>The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
-
-                    <p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
-
-                    <h2 class="section-heading">Reaching for the Stars</h2>
-
-                    <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
-
-                    <a href="#">
-                        <img class="img-responsive" src="img/post-sample-image.jpg" alt="">
-                    </a>
-                    <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
-
-                    <p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
-
-                    <p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
-
-                    <p>Placeholder text by <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>.</p>
+                    <h2 class="section-heading">Where to from here?</h2>
+                    <p>Stop thinking about the latest and greatest tool or method that you read about on HN. Do not try to force your team to be exactly like the other teams you read about. Understand what your value stream is. What are the work centers from idea to impact
+                        on your customer? How do you measure the velocity and quality of those work centers? (Hint: lead
+                        time, %C/A) How can you gain awareness of blockers quicky and enable teams to swarm issues?</p>
+                    <p>If you can focus on visualizing the work you have to do in support of your vision, and where each piece
+                        of work is in the system, you are on your way to mastering flow. The next step is amplifying feedback
+                        that ultimately creates a culture of learning.</p>
+                    <p>These should all be thought of first, or at least at the same time as your teams explore sexy tooling
+                        and progressive development methods.</p>
                 </div>
             </div>
         </div>
@@ -159,7 +190,7 @@
                             </a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted">Copyright &copy; Your Website 2016</p>
+                    <p class="copyright text-muted">MTFBWY &hearts;</p>
                 </div>
             </div>
         </div>
